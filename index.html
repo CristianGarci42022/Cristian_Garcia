@@ -7217,7 +7217,7 @@
     }
 
     body {
-      color: #08a966;
+      color: #511111;
       font-family: "Raleway";
       font-size: 8pt;
       -webkit-font-smoothing: antialiased;
@@ -7249,11 +7249,11 @@
       left: 0;
       position: absolute;
       top: 0;
-      width: 280vw;
+      width: 200vw;
     }
 
     .button {
-      border: 2px solid #0d00fe;
+      border: 2px solid #777777;
       box-sizing: inherit;
       cursor: pointer;
       display: inline-block;
@@ -7299,7 +7299,7 @@
     }
 
     .hexagon {
-      background-color: #08a966;
+      background-color: #956925;
       display: inline-block;
       height: 100%;
       width: calc(100% * 0.57735);
@@ -7332,7 +7332,7 @@
     }
 
     .header {
-      color: #0d00fe;
+      color: #045433;
       font-family: "raleway-bold";
       font-size: 25pt;
       position: relative;
@@ -7340,7 +7340,7 @@
     }
 
     .header-bar {
-      background: #0c7348;
+      background: #ff9b00;
       height: 4px;
       margin: 25px 0 75px 0;
       width: 70px;
@@ -7361,7 +7361,7 @@
       left: 0;
       position: absolute;
       background: #1b242f;
-      border-bottom: 3px solid #08a966;
+      border-bottom: 3px solid #ff9b00;
       height: 50px;
       text-align: left;
       width: 100%;
@@ -7380,7 +7380,7 @@
     }
 
     nav .link-wrap {
-      background: #333;
+      background: #1b242f;
       height: 0;
       max-width: 1200px;
       overflow: hidden;
@@ -7420,7 +7420,7 @@
     }
 
     nav .active {
-      color: #0d00fe;
+      color: #ffffff;
     }
 
     .carousel-wrap {
@@ -7597,7 +7597,7 @@
     }
 
     section {
-      color: #343434;
+      color: #000000;
       line-height: 11pt;
       padding: 70px 0 70px 0;
       position: relative;
@@ -7612,7 +7612,7 @@
     }
 
     section:nth-of-type(1) {
-      color: #08a966;
+      color: #ff9b00;
       height: calc(100vh + 53px);
       padding: 0 10px;
     }
@@ -7665,7 +7665,7 @@
     }
 
     section:nth-of-type(2) .highlight {
-      color: #08a966;
+      color: #FF9B00;
     }
 
     section:nth-of-type(2) .up-arrow {
@@ -7708,8 +7708,8 @@
 
     section:nth-of-type(2) .bar {
       align-items: flex-end;
-      background-color: #e2e2e2;
-      color: #000;
+      background-color: #939393;
+      color: #045433;
       font-size: 7pt;
       height: 22px;
       margin: 0 0 12px 0;
@@ -7764,7 +7764,7 @@
       left: 0;
       position: absolute;
       top: 0;
-      background-color: #07a965;
+      background-color: #045433;
       opacity: 1;
       padding: 0;
     }
@@ -7773,7 +7773,7 @@
       left: 0;
       position: absolute;
       top: 0;
-      background-color: #0b7247;
+      background-color: #956925;
       color: #fff;
       height: 100%;
       width: 110px;
@@ -8870,6 +8870,44 @@
 
 
 
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
 </body>
 
 </html>
